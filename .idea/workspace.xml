@@ -27,10 +27,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82de1459-3e67-41b7-a493-6b2e252e8cc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/.idea/checkstyle-idea.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/.idea/codestream.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/.idea/compiler.xml" afterDir="false" />
@@ -51,8 +47,6 @@
       <change beforePath="$PROJECT_DIR$/Lab/Task1.1/baovq/app/src/main/res/layout/activity_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/app/src/main/res/layout/activity_detail.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab/Task1.1/baovq/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab/Task1.1/baovq/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab/Task1.1/maintx/screen1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab/Task1.1/maintx/screen2.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,10 +56,10 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="qbao" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Lab/Task1.1/baovq" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitToolBoxStore">
@@ -141,6 +135,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1615146488397">
