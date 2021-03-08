@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/starting-code-part2" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="82de1459-3e67-41b7-a493-6b2e252e8cc2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/.idea/codestream.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Task1.1/baovq/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Task1.1/baovq/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Task1.1/baovq/FoodsApp-starting-code.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/FoodsApp-starting-code.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Task1.1/baovq/Screenshot1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Task1.1/baovq/Screenshot2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Task1.1/baovq/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Task1.1/baovq/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Task1.1/baovq/app/src/main/java/com/haerul/foodsapp/api/FoodApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/app/src/main/java/com/haerul/foodsapp/api/FoodApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Task1.1/baovq/app/src/main/java/com/haerul/foodsapp/view/category/CategoryFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/app/src/main/java/com/haerul/foodsapp/view/category/CategoryFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Task1.1/baovq/app/src/main/java/com/haerul/foodsapp/view/detail/DetailActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/app/src/main/java/com/haerul/foodsapp/view/detail/DetailActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Task1.1/baovq/app/src/main/java/com/haerul/foodsapp/view/detail/DetailPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/app/src/main/java/com/haerul/foodsapp/view/detail/DetailPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Task1.1/baovq/app/src/main/java/com/haerul/foodsapp/view/detail/DetailView.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/app/src/main/java/com/haerul/foodsapp/view/detail/DetailView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Task1.1/baovq/app/src/main/java/com/haerul/foodsapp/view/home/HomeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/app/src/main/java/com/haerul/foodsapp/view/home/HomeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Task1.1/baovq/app/src/main/res/layout/activity_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/app/src/main/res/layout/activity_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Task1.1/baovq/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab/Task1.1/baovq/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Lab/Task1.1/baovq/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="qbao" />
+        <entry key="$PROJECT_DIR$/Lab/Task1.1/baovq" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Lab/Task1.1/baovq" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="qbao" />
+                    <option name="lastUsedInstant" value="1615145130" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1615145129" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="ProjectId" id="1pRTpWnuVmV7qkL6jeKj2KLONqW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Lab/Task1.1/baovq" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82de1459-3e67-41b7-a493-6b2e252e8cc2" name="Default Changelist" comment="" />
+      <created>1615145085728</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615145085728</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/starting-code-part2" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615147454087">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1615147454087" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1615147488126">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1615147488126" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1615147243888">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1615147243888" />
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1615146339079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1615146339079" />
+    <state x="501" y="186" key="git4idea.merge.GitPullDialog" timestamp="1615146457236">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="501" y="186" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1615146457236" />
+  </component>
+</project>
