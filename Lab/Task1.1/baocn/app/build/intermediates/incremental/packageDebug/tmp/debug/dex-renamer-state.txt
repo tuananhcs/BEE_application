@@ -1,0 +1,4 @@
+#Mon Mar 08 00:34:51 ICT 2021
+base.0=D\:\\ing\\Phát tri?n ?ng d?ng di ??ng\\lab\\New folder\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
