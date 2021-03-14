@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="411dp"
+        android:layout_height="50dp"
+        android:background="@color/mainColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="28.54dp"
+            android:layout_height="28.95dp"
+            android:layout_marginLeft="22dp"
+            app:srcCompat="@drawable/three_lines_menu" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="30.83dp"
+            android:layout_height="30.07dp"
+            android:layout_marginLeft="15dp"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="190dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="51.17dp"
+            android:text="Payment"
+            android:textColor="@color/black"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="38dp"
+            android:layout_height="37.07dp"
+            android:layout_marginLeft="24.61dp"
+            app:srcCompat="@drawable/user" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="63dp"
+        android:layout_margin="10dp"
+        android:layout_weight="0"
+
+        android:padding="10dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="70dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="69dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/title"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="exam fees"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="301dp"
+        android:layout_height="5dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="654dp"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="63dp"
+        android:layout_margin="10dp"
+        android:layout_weight="0"
+
+        android:padding="10dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="259dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="69dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/calendar"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Date"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="23-01-2020"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="63dp"
+        android:layout_margin="10dp"
+        android:layout_weight="0"
+
+        android:padding="10dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="565dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="69dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/calendar"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Date"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="23-01-2020"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="63dp"
+        android:layout_margin="10dp"
+        android:layout_weight="0"
+
+        android:padding="10dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="439dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="69dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/send"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Amount"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="$ 50"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="63dp"
+        android:layout_margin="10dp"
+        android:layout_weight="0"
+
+        android:padding="10dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="376dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="69dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/title"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="exam fees"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="63dp"
+        android:layout_margin="10dp"
+        android:layout_weight="0"
+
+        android:padding="10dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="133dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="69dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/send"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Amount"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="$ 50"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="63dp"
+        android:layout_margin="10dp"
+        android:layout_weight="0"
+
+        android:padding="10dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="502dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="69dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/circle"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Status"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="96dp"
+            android:layout_height="28dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Fully Paid"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="63dp"
+        android:layout_margin="10dp"
+        android:layout_weight="0"
+
+        android:padding="10dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="196dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="69dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/circle"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Status"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="96dp"
+            android:layout_height="28dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Fully Paid"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="301dp"
+        android:layout_height="5dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="348dp"></LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
