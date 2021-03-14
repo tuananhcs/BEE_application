@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/ahihi"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#00B4D8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ahihi"
+        app:layout_constraintStart_toStartOf="@+id/ahihi"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="299dp"
+        android:layout_marginRight="299dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ahihi"
+        app:layout_constraintEnd_toEndOf="@+id/ahihi"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/back" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="97dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginRight="154dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Notice List"
+        app:layout_constraintBottom_toBottomOf="@+id/ahihi"
+        app:layout_constraintEnd_toEndOf="@+id/ahihi"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="@+id/ahihi"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ahihi"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/squares" />
+
+
+
+    <CalendarView
+        android:id="@+id/calender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ahihi"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="403dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Test AI&#10;1/1/1970"
+        android:textAlignment="gravity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calender" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="403dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Test PPL&#10;2/1/1970"
+        android:textAlignment="gravity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="403dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Online test DBS&#10;3/1/1970-4/1/1970"
+        android:textAlignment="gravity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ahihi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ellipse" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
