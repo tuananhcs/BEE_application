@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BEEApplication">
         <activity android:name=".PaymentDetail"/>
-        <activity android:name=".Payment" />
+        <activity android:name=".Login" />
         <activity android:name=".Notification" />
         <activity android:name=".ExamSchedule" />
         <activity android:name=".Contact" />
@@ -18,7 +18,7 @@
         <activity android:name=".Register" />
         <activity android:name=".Timetable" />
         <activity android:name=".Result" />
-        <activity android:name=".Login" >
+        <activity android:name=".Payment" >
 
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
