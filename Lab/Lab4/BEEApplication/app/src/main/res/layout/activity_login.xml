@@ -5,6 +5,97 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Login">
+    tools:context=".Login"
+    android:background="@color/header">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/beehive"
+        android:layout_gravity="right|top"/>
+    <ImageView
+        android:id="@+id/imgTitle"
+        android:layout_width="80dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@mipmap/title" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ultimate education erp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/graytext"
+        android:background="@drawable/rectangle"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundlogin"
+        android:layout_marginTop="-50dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/strokelogin"
+            android:hint="Email"
+            android:padding="15dp"
+            android:textColorHint="@color/logintext"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:drawableRight="@mipmap/email"
+            android:gravity="center_vertical"
+            />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/strokelogin"
+            android:hint="Password"
+            android:padding="15dp"
+            android:textColorHint="@color/logintext"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:drawableRight="@mipmap/padlock"
+            android:gravity="center_vertical"
+            />
+
+        <CheckBox
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/password"
+            android:shadowColor="@color/yellow"
+            android:text=" Lưu thông tin"
+            android:textColor="@color/yellow"
+            android:textSize="14dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroundbutton"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Đăng nhập"
+            android:textSize="18sp"
+            android:textColor="@color/logintext"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/logintext"
+            android:text="Quên mật khẩu?"
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+
 
 </LinearLayout>
