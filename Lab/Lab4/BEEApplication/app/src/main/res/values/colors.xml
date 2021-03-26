@@ -10,4 +10,6 @@
     <color name="redbackground">#FF1F1F</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="graytext">#E5E5E5 </color>
+    <color name="logintext">#593A16 </color>
 </resources>
