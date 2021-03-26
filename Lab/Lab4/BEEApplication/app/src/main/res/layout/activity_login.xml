@@ -7,11 +7,13 @@
     android:orientation="vertical"
     tools:context=".Login"
     android:background="@color/header">
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/beehive"
-        android:layout_gravity="right|top"/>
+        android:layout_gravity="right|top"
+        android:alpha="0.3"
+        android:src="@drawable/beehive" />
     <ImageView
         android:id="@+id/imgTitle"
         android:layout_width="80dp"
@@ -37,6 +39,7 @@
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/edtEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
@@ -48,9 +51,9 @@
             android:layout_gravity="center"
             android:drawableRight="@mipmap/email"
             android:gravity="center_vertical"
-            />
+            android:inputType="textEmailAddress"/>
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/edtPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -62,13 +65,14 @@
             android:layout_gravity="center"
             android:drawableRight="@mipmap/padlock"
             android:gravity="center_vertical"
+            android:inputType="textPassword"
             />
 
         <CheckBox
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/password"
+            android:layout_alignLeft="@id/edtPassword"
             android:shadowColor="@color/yellow"
             android:text=" Lưu thông tin"
             android:textColor="@color/yellow"
@@ -77,6 +81,8 @@
             android:layout_marginTop="10dp"
             />
         <Button
+            android:onClick="login"
+            android:id="@+id/btnLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/backgroundbutton"
@@ -86,13 +92,13 @@
             android:textSize="18sp"
             android:textColor="@color/logintext"/>
         <TextView
+            android:id="@+id/txtForgot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textColor="@color/logintext"
             android:text="Quên mật khẩu?"
             android:layout_marginTop="10dp"/>
-
 
     </LinearLayout>
 
