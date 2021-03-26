@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7539dd8f-0fc2-433b-876b-e614085da37f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/BEEApplication/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BEEApplication/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/back (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/back-cam.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/bee-hive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/bee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/bell.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/calendar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/charging-circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/contact.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/logout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/lịchthi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/noti.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/profile-user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/resgiter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/results.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/score.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/send.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/subject.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/timetable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/title.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/mipmap-hdpi/wallet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BEEApplication/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BEEApplication/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/BEEApplication/gradlew.bat" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1qFvfBsyLiywkgQg7OC6A7Rc7Si" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../../../../Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/BEEApplication" />
+    <property name="project.structure.last.edited" value="SDK Location" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7539dd8f-0fc2-433b-876b-e614085da37f" name="Default Changelist" comment="" />
+      <created>1616688253409</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616688253409</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1616688348152">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1616688348152" />
+  </component>
+</project>
