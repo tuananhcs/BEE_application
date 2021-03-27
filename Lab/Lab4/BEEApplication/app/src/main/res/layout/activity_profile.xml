@@ -5,6 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Profile">
+    <RelativeLayout
+        android:id="@+id/titleTTCN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/imageHeader"
@@ -35,9 +39,20 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 app:srcCompat="@mipmap/user" />
-
-
         </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTTCN"
+        android:layout_above="@+id/footer">
+
+        <!--TODO: content scrollable-->
+
+    </ScrollView>
+
     <include layout="@layout/footer"/>
 
 </RelativeLayout>
