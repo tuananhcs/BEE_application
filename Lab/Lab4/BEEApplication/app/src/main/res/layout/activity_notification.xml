@@ -1,296 +1,367 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Notification"
-    >
+    tools:context=".Notification">
 
-    <ImageView
-        android:id="@+id/imgHeaderdetail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-5dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintLeft_toRightOf="parent"
-        app:srcCompat="@drawable/headerdetail" />
+    <include layout="@layout/header_detail"/>
 
-    <ImageView
-        android:id="@+id/imgBack"
-        android:layout_width="37dp"
-        android:layout_height="27dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="@+id/imgHeaderdetail"
-        app:srcCompat="@mipmap/doublearrow"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-8dp" />
-
-    <ImageView
-        android:id="@+id/imgTitle"
-        android:layout_width="80dp"
-        android:layout_height="53dp"
-        android:layout_alignParentStart="true"
-        app:srcCompat="@mipmap/title"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Thông báo"
+        android:id="@+id/txtThongBao"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center_vertical"
+        android:text="  Thông báo"
         android:textColor="@color/black"
-        android:textSize="42dp"
-        android:layout_marginLeft="27dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgHeaderdetail"
-         />
-
-    <TableLayout
-        android:layout_marginTop="20dp"
-        android:stretchColumns="2"
-        android:shrinkColumns="1"
+        android:textSize="42dp" />
+    <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/txtThongBao"
+        android:layout_above="@+id/footer">
 
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        >
-
-
-
-        <TableRow
+        <TableLayout
+            android:layout_marginTop="20dp"
+            android:stretchColumns="2"
+            android:shrinkColumns="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/graybackground">
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_span="0"
-                android:src="@mipmap/examtime"
-                android:layout_marginHorizontal="10dp"
-                android:layout_marginVertical="10dp"
-                />
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            >
 
-            <TextView
-
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_span="2"
-                android:layout_marginVertical="10dp"
-                android:text="Thi Nguyên lý ngôn ngữ lập trình"
-                android:textSize="20dp" />
-
-            <TextView
-                android:textStyle="bold"
-                android:textColor="@color/yellow"
-                android:id="@+id/textView7"
-                android:layout_width="wrap_content"
+            <TableRow
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_span="1"
-                android:textSize="15dp"
-                android:text="12/2/2021" />
+                android:background="@color/graybackground">
 
-        </TableRow>
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_span="0"
+                    android:src="@mipmap/examtime"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="10dp"
+                    />
 
-        <TableRow android:layout_marginTop="30px"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/graybackground">
+                <TextView
 
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_span="0"
-                android:src="@mipmap/examtime"
-                android:layout_marginVertical="10dp"
-                />
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_span="2"
+                    android:layout_marginVertical="10dp"
+                    android:text="Thi Nguyên lý ngôn ngữ lập trình"
+                    android:textSize="20dp" />
 
-            <TextView
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/yellow"
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_span="1"
+                    android:textSize="15dp"
+                    android:text="12/2/2021" />
 
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_span="2"
-                android:text="Thi Database"
-                android:layout_marginVertical="10dp"
-                android:textSize="20dp" />
+            </TableRow>
 
-            <TextView
-                android:textStyle="bold"
-                android:textColor="@color/yellow"
-                android:layout_width="wrap_content"
+            <TableRow android:layout_marginTop="30px"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_span="1"
-                android:textSize="15dp"
-                android:text="13/2/2021" />
-        </TableRow>
+                android:background="@color/graybackground">
 
-        <TableRow android:layout_marginTop="30px"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/graybackground">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_span="0"
+                    android:src="@mipmap/examtime"
+                    android:layout_marginVertical="10dp"
+                    />
 
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_span="0"
-                android:src="@mipmap/payment"
-                android:layout_marginVertical="10dp"
-                />
+                <TextView
 
-            <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_span="2"
+                    android:text="Thi Database"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="20dp" />
 
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_span="2"
-                android:layout_marginVertical="10dp"
-                android:text="Thanh toán học phí HK202"
-                android:textSize="20dp" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_span="1"
+                    android:textSize="15dp"
+                    android:text="13/2/2021" />
+            </TableRow>
 
-            <TextView
-                android:textStyle="bold"
-                android:textColor="@color/yellow"
-                android:layout_width="wrap_content"
+            <TableRow android:layout_marginTop="30px"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_span="1"
-                android:textSize="15dp"
-                android:text="19/3/2021" />
-        </TableRow>
+                android:background="@color/graybackground">
 
-        <TableRow android:layout_marginTop="30px"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/graybackground">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_span="0"
+                    android:src="@mipmap/payment"
+                    android:layout_marginVertical="10dp"
+                    />
 
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_span="0"
-                android:src="@mipmap/subject"
-                android:layout_marginVertical="10dp"
-                />
+                <TextView
 
-            <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_span="2"
+                    android:layout_marginVertical="10dp"
+                    android:text="Thanh toán học phí HK202"
+                    android:textSize="20dp" />
 
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_span="2"
-                android:text="Đăng kí dự thính HK202"
-                android:layout_marginVertical="10dp"
-                android:textSize="20dp" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_span="1"
+                    android:textSize="15dp"
+                    android:text="19/3/2021" />
+            </TableRow>
 
-            <TextView
-                android:textStyle="bold"
-                android:textColor="@color/yellow"
-                android:layout_width="wrap_content"
+            <TableRow android:layout_marginTop="30px"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_span="1"
-                android:textSize="15dp"
-                android:text="21/3/2021" />
-        </TableRow>
+                android:background="@color/graybackground">
 
-        <TableRow android:layout_marginTop="30px"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/graybackground">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_span="0"
+                    android:src="@mipmap/subject"
+                    android:layout_marginVertical="10dp"
+                    />
 
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_span="0"
-                android:src="@mipmap/examtime"
-                android:layout_marginVertical="10dp"
-                />
+                <TextView
 
-            <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_span="2"
+                    android:text="Đăng kí dự thính HK202"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="20dp" />
 
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_span="1"
-                android:layout_marginVertical="10dp"
-                android:text="Thi Mật mã và an ninh mạng"
-                android:textSize="20dp" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_span="1"
+                    android:textSize="15dp"
+                    android:text="21/3/2021" />
+            </TableRow>
 
-            <TextView
-                android:textStyle="bold"
-                android:textColor="@color/yellow"
-                android:layout_width="wrap_content"
+            <TableRow android:layout_marginTop="30px"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_span="2"
-                android:textSize="15dp"
-                android:text="22/3/2021" />
-        </TableRow>
+                android:background="@color/graybackground">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_span="0"
+                    android:src="@mipmap/examtime"
+                    android:layout_marginVertical="10dp"
+                    />
+
+                <TextView
+
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_span="1"
+                    android:layout_marginVertical="10dp"
+                    android:text="Thi Mật mã và an ninh mạng"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_span="2"
+                    android:textSize="15dp"
+                    android:text="22/3/2021" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="30px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/graybackground">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_span="0"
+                    android:src="@mipmap/examtime"
+                    android:layout_marginVertical="10dp"
+                    />
+
+                <TextView
+
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_span="1"
+                    android:layout_marginVertical="10dp"
+                    android:text="Thi Mật mã và an ninh mạng"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_span="2"
+                    android:textSize="15dp"
+                    android:text="22/3/2021" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="30px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/graybackground">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_span="0"
+                    android:src="@mipmap/examtime"
+                    android:layout_marginVertical="10dp"
+                    />
+
+                <TextView
+
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_span="1"
+                    android:layout_marginVertical="10dp"
+                    android:text="Thi Mật mã và an ninh mạng"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_span="2"
+                    android:textSize="15dp"
+                    android:text="22/3/2021" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="30px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/graybackground">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_span="0"
+                    android:src="@mipmap/examtime"
+                    android:layout_marginVertical="10dp"
+                    />
+
+                <TextView
+
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_span="1"
+                    android:layout_marginVertical="10dp"
+                    android:text="SHCD đầu năm"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_span="2"
+                    android:textSize="15dp"
+                    android:text="22/3/2021" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="30px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/graybackground">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_span="0"
+                    android:src="@mipmap/examtime"
+                    android:layout_marginVertical="10dp"
+                    />
+
+                <TextView
+
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_span="1"
+                    android:layout_marginVertical="10dp"
+                    android:text="Thi AVĐV"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_span="2"
+                    android:textSize="15dp"
+                    android:text="22/3/2021" />
+            </TableRow>
 
 
-    </TableLayout>
+        </TableLayout>
+    </ScrollView>
+    <include layout="@layout/footer"/>
 
-    <RelativeLayout
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_width="match_parent"
-        android:layout_height="62dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="0dp"
-        android:background="@color/yellow">
 
-        <ImageView
-            android:id="@+id/imgTTCN"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="31dp"
-            android:layout_marginTop="15dp"
-            app:srcCompat="@mipmap/profile_footer" />
-
-        <ImageView
-            android:id="@+id/imgHome"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="188dp"
-            android:layout_marginTop="15dp"
-            app:srcCompat="@mipmap/home" />
-
-        <ImageView
-            android:id="@+id/imgThongbao"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-
-            android:layout_alignParentTop="true"
-
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="31dp"
-            app:srcCompat="@mipmap/bell_footer" />
-    </RelativeLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
