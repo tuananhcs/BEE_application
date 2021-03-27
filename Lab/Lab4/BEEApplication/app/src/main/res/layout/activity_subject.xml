@@ -26,17 +26,8 @@
             android:textColor="@color/black"
             android:textSize="42dp" />
         <!-- TODO: spinner-->
+        <include layout="@layout/spinner"/>
 
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="191dp"
-            android:layout_height="40dp"
-            android:layout_below="@+id/titleMonhoc"
-            android:layout_marginLeft="20dp"
-            android:background="@mipmap/spinner"
-            android:dropDownSelector="@mipmap/rectanglehome"
-            android:popupBackground="@mipmap/rectanglehome"
-            android:spinnerMode="dialog" />
     </LinearLayout>
 
     <ScrollView

@@ -12,15 +12,16 @@
         <activity android:name=".Subject"></activity>
         <activity android:name=".ForgotPassword" />
         <activity android:name=".PaymentDetail" />
-        <activity android:name=".Login">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".Login"/>
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
         <activity android:name=".Notification" />
-        <activity android:name=".ExamSchedule" />
+        <activity android:name=".ExamSchedule" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Contact" />
         <activity android:name=".Profile" />
         <activity android:name=".Register" />

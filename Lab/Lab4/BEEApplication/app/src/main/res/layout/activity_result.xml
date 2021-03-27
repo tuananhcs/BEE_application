@@ -8,20 +8,26 @@
 
     <include layout="@layout/header_detail"/>
 
-
-    <TextView
-        android:id="@+id/titleBangdiem"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="88dp"
+        android:layout_height="130dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="64dp"
-        android:gravity="center_vertical"
-        android:text="  Lịch thi"
-        android:textColor="@color/black"
-        android:textSize="42dp" />
-    <!-- TODO: spinner-->
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/titleBangdiem"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:gravity="center_vertical"
+            android:text="  Bảng điểm"
+            android:textColor="@color/black"
+            android:textSize="42dp" />
+        <!-- TODO: spinner-->
+        <include layout="@layout/spinner"/>
+
+    </LinearLayout>
 
     <ScrollView
         android:id="@+id/scrollView"

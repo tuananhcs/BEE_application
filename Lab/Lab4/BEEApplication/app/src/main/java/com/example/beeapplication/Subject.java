@@ -2,27 +2,33 @@ package com.example.beeapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class Subject extends AppCompatActivity {
     Spinner spinner;
-    ArrayAdapter<String> adapter;
+    SpinnerControl s=new SpinnerControl();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_subject);
-        addControl();
+        addControls();
+        addEvents();
     }
 
-    private void addControl() {
+    private void addEvents() {
+        s.selectHK(Subject.this,spinner);
+
+    }
+
+    private void addControls() {
         spinner=findViewById(R.id.spinner);
-        adapter=new ArrayAdapter<String>(Subject.this,
-                android.R.layout.simple_spinner_item);
-        adapter.add("  Học kì 2 2020-2021");
-        adapter.add("  Học kì 1 2020-2021");
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
+
     }
 }
