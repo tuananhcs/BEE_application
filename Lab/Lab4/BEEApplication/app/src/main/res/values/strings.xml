@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BEE Application</string>
+    
+    <string-array name="names">
+        <item>Học kì 2 2020-2021</item>
+    </string-array>
 </resources>
