@@ -20,6 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".PrintTrans" />
+        <activity android:name=".PrintCerf"/>
+        <activity android:name=".PrintIDCard"/>
         <activity android:name=".Notification" />
         <activity android:name=".ExamSchedule" />
         <activity android:name=".Contact" />

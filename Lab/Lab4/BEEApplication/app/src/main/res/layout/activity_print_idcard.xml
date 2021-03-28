@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrintIDCard">
+
+    <include layout="@layout/header_detail"/>
+
+
+        <TextView
+        android:id="@+id/titleprintidcard"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="60dp"
+
+        android:layout_marginLeft="10dp"
+        android:text="Đăng ký in thẻ sinh viên"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/footer"
+            android:layout_below="@id/titleprintidcard"
+            android:layout_marginTop="5dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/bodylayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical">
+
+                <!-- TODO: spinner-->
+
+                <TableLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:shrinkColumns="*">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center_vertical"
+                            android:text="1. Kiểm tra lại thông tin cá nhân"
+                            android:textColor="@color/black"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/tthpki1_19_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/graybackground"
+                    android:isScrollContainer="true"
+                    android:paddingRight="10dp"
+                    android:shrinkColumns="1"
+                    android:stretchColumns="1"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center_vertical"
+                            android:text="Họ và tên"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/txtMSSV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:layout_marginBottom="5dp"
+                            android:layout_span="1"
+                            android:gravity="center_vertical"
+                            android:text="  Mã số sinh viên"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edtName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:layout_column="0"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginRight="180dp"
+                            android:width="120dp"
+                            android:height="10dp"
+                            android:background="@drawable/strokeyellow"
+                            android:hint=" Họ và tên"
+                            android:inputType="number"
+                            android:padding="5dp"
+                            android:textColorHint="@color/logintext"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/edtMssv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:ems="10"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_span="1"
+
+                            android:background="@drawable/strokeyellow"
+                            android:hint=" Mã số sinh viên"
+                            android:inputType="number"
+                            android:padding="5dp"
+                            android:textColorHint="@color/logintext"
+                            android:textSize="14sp" >
+                            <requestFocus />
+                        </EditText>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtBirth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center_vertical"
+                            android:text="Ngày sinh"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/edtBirth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_span="1"
+                            android:ems="10"
+                            android:background="@drawable/strokeyellow"
+                            android:hint="Ngày sinh"
+                            android:inputType="number"
+                            android:padding="5dp"
+                            android:textColorHint="@color/logintext"
+                            android:textSize="14sp" >
+                            <requestFocus />
+                        </EditText>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtHome"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center_vertical"
+                            android:text="Hộ khẩu thường trú"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/edtHome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_span="1"
+                            android:width="120dp"
+                            android:height="10dp"
+                            android:background="@drawable/strokeyellow"
+                            android:hint="Hộ khẩu"
+                            android:inputType="number"
+                            android:padding="5dp"
+                            android:textColorHint="@color/logintext"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtFaculty"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center_vertical"
+                            android:text="Khoa/TT đào tạo"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/edtFaculty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_span="1"
+                            android:width="120dp"
+                            android:height="10dp"
+                            android:background="@drawable/strokeyellow"
+                            android:hint="Khoa/TT đào tạo"
+                            android:inputType="number"
+                            android:padding="5dp"
+                            android:textColorHint="@color/logintext"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtGrade"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center_vertical"
+                            android:text="Bậc học"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/edtGrade"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_span="1"
+
+                            android:background="@drawable/strokeyellow"
+                            android:hint="Đại học"
+                            android:inputType="number"
+                            android:padding="5dp"
+                            android:textColorHint="@color/logintext"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtForm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center_vertical"
+                            android:text="Hình thức"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <EditText
+                            android:id="@+id/edtForm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_span="1"
+
+                            android:background="@drawable/strokeyellow"
+                            android:hint="Chính quy"
+                            android:inputType="number"
+                            android:padding="5dp"
+                            android:textColorHint="@color/logintext"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:text="2. Nhập thông tin đăng ký"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:id="@+id/NoteReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/graybackground"
+                    android:isScrollContainer="true"
+                    android:padding="10dp"
+                    android:paddingRight="10dp"
+                    android:shrinkColumns="1"
+                    android:stretchColumns="2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtWhen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+
+                            android:gravity="center_vertical"
+                            android:text="Đợt đăng ký"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <Spinner
+                            android:id="@+id/spinner_when"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="90dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_span="2"
+                            android:layout_weight="1"
+                            android:background="@mipmap/spinner"
+                            android:dropDownSelector="@mipmap/rectanglehome"
+                            android:gravity="center_vertical"
+                            android:popupBackground="@mipmap/rectanglehome"
+                            android:spinnerMode="dialog"
+                            android:ems="10"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtWhere"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center_vertical"
+                            android:text="Nơi nhận"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <Spinner
+                            android:id="@+id/spinner_where"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="90dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_span="1"
+                            android:layout_weight="1"
+                            android:background="@mipmap/spinner"
+                            android:dropDownSelector="@mipmap/rectanglehome"
+                            android:gravity="center_vertical"
+                            android:popupBackground="@mipmap/rectanglehome"
+                            android:spinnerMode="dialog"
+                            android:ems="10"/>
+                    </TableRow>
+                    <LinearLayout
+                        android:id="@+id/note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical"
+                        android:background= "@drawable/backgroundnote"
+                        android:padding="5dp">
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtNote"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+
+
+                            android:layout_gravity="left"
+                            android:text="Sau khi xác nhận thì sinh viên cần thực hiện thanh toán 'lệ phí' tại BKPay để được in.
+                            \nSau khi thanh toán, thẻ sẽ được in trong vòng 3-5 ngày làm việc.
+                            \nSinh viên phải đến nhận 'Thẻ sinh viên' trong vòng 30 ngày sau khi đã được in, quá thời hạn thẻ sẽ bị hủy."
+
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="14dp" />
+
+                        </TableRow>
+            </LinearLayout>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/tbreg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:isScrollContainer="true"
+                    android:paddingRight="10dp"
+                    android:shrinkColumns="1"
+                    android:stretchColumns="2"
+                    android:layout_above="@+id/footer"
+
+                    app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/btnRegister"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginRight="100dp"
+                            android:background="@drawable/button_size_small"
+                            android:onClick="Register"
+                            android:padding="5dp"
+                            android:text="Xác nhận Đăng ký"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </TableRow>
+                </TableLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    <include layout="@layout/footer"/>
+
+</RelativeLayout>
