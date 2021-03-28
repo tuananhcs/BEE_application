@@ -53,12 +53,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_marginLeft="3dp"
-                    android:layout_marginBottom="10dp">
+                    android:layout_marginBottom="5dp">
 
                     <TextView
                         android:id="@+id/textView17"
-                        android:layout_width="75dp"
-                        android:layout_height="61dp"
+                        android:layout_width="60dp"
+                        android:layout_marginTop="-0.7dp"
+                        android:layout_height="61.5dp"
                         android:background="@mipmap/bd1"
                         android:gravity="center"
                         android:text="CO3003"
@@ -66,8 +67,17 @@
                         android:textStyle="bold" />
 
 
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:background="@color/header"
+                        android:text="4\nTC" />
+
                     <LinearLayout
-                        android:layout_width="252dp"
+                        android:layout_width="231dp"
                         android:layout_height="61dp"
                         android:layout_marginLeft="-2dp"
                         android:background="@mipmap/bd2"
@@ -110,21 +120,29 @@
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_marginLeft="3dp"
-                    android:layout_marginBottom="10dp">
+                    android:layout_marginBottom="5dp">
 
                     <TextView
                         android:id="@+id/textView171"
-                        android:layout_width="75dp"
-                        android:layout_height="61dp"
+                        android:layout_width="60dp"
+                        android:layout_marginTop="-0.7dp"
+                        android:layout_height="61.5dp"
                         android:background="@mipmap/bd1"
                         android:gravity="center"
                         android:text="MT1003"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
 
-
+                    <TextView
+                        android:id="@+id/textView181"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:background="@color/header"
+                        android:text="2\nTC" />
                     <LinearLayout
-                        android:layout_width="252dp"
+                        android:layout_width="231dp"
                         android:layout_height="61dp"
                         android:layout_marginLeft="-2dp"
                         android:background="@mipmap/bd2"
@@ -167,21 +185,29 @@
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_marginLeft="3dp"
-                    android:layout_marginBottom="10dp">
+                    android:layout_marginBottom="5dp">
 
                     <TextView
                         android:id="@+id/textView172"
-                        android:layout_width="75dp"
-                        android:layout_height="61dp"
+                        android:layout_width="60dp"
+                        android:layout_marginTop="-0.7dp"
+                        android:layout_height="61.5dp"
                         android:background="@mipmap/bd1"
                         android:gravity="center"
                         android:text="SP1005"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
 
-
+                    <TextView
+                        android:id="@+id/textView182"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:background="@color/header"
+                        android:text="2\nTC" />
                     <LinearLayout
-                        android:layout_width="252dp"
+                        android:layout_width="231dp"
                         android:layout_height="61dp"
                         android:layout_marginLeft="-2dp"
                         android:background="@mipmap/bd2"
@@ -444,6 +470,7 @@
                         android:textStyle="bold" />
                 </TableRow>
             </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 
