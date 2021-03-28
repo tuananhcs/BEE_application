@@ -19,7 +19,7 @@ public class Login extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             if (view.getId() == R.id.txtForgot) {
-                Intent intent = new Intent(Login.this, MainActivity.class);
+                Intent intent = new Intent(Login.this, ForgotPassword.class);
                 startActivity(intent);
             }
         }

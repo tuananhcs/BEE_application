@@ -8,6 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class SpinnerControl {
     Spinner spinner;
     ArrayAdapter<String> adapter;
@@ -16,7 +18,6 @@ public class SpinnerControl {
         spinner = s;
         adapter = new ArrayAdapter<String>(c,
                 android.R.layout.simple_spinner_item);
-        adapter.add("  Tất cả");
         adapter.add("  Học kì 2 2020-2021");
         adapter.add("  Học kì 1 2020-2021");
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -35,14 +36,11 @@ public class SpinnerControl {
             }
         });
     }
-
-    protected void selectStatus(Context c, Spinner s) {
+    protected void select(Context c, Spinner s, String []a) {
         spinner = s;
         adapter = new ArrayAdapter<String>(c,
-                android.R.layout.simple_spinner_item);
-        adapter.add("  Tất cả");
-        adapter.add("  Chưa thanh toán");
-        adapter.add("  Đã thanh toán");
+                android.R.layout.simple_spinner_item,
+                a);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 

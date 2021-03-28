@@ -16,12 +16,6 @@ public class Timetable extends AppCompatActivity {
         setContentView(R.layout.activity_timetable);
         addControls();
         addEvents();
-
-        Spinner mySpinner = (Spinner) findViewById(R.id.spinner);
-        ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(Timetable.this,
-                android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.names));
-        myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        mySpinner.setAdapter(myAdapter);
     }
 
     private void addEvents() {

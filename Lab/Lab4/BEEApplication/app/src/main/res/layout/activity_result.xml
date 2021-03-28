@@ -6,9 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".Result">
 
-    <include layout="@layout/header_detail"/>
+    <include layout="@layout/header_detail" />
 
     <LinearLayout
+        android:id="@+id/layoutBangdiem"
         android:layout_width="match_parent"
         android:layout_height="130dp"
         android:layout_alignParentStart="true"
@@ -16,6 +17,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="64dp"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/titleBangdiem"
             android:layout_width="match_parent"
@@ -25,7 +27,7 @@
             android:textColor="@color/black"
             android:textSize="42dp" />
         <!-- TODO: spinner-->
-        <include layout="@layout/spinner"/>
+        <include layout="@layout/spinner" />
 
     </LinearLayout>
 
@@ -33,13 +35,418 @@
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/titleBangdiem"
-        android:layout_above="@+id/footer">
+        android:layout_above="@+id/footer"
+        android:layout_below="@id/layoutBangdiem">
 
         <!--        TODO: content-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="75dp"
+                        android:layout_height="61dp"
+                        android:background="@mipmap/bd1"
+                        android:gravity="center"
+                        android:text="CO3003"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="252dp"
+                        android:layout_height="61dp"
+                        android:layout_marginLeft="-2dp"
+                        android:background="@mipmap/bd2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="center_vertical"
+                            android:text="Mạng máy tính"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="center_vertical"
+                            android:text="TN: 10.0, BTL:9.75, Thi:6.5"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="60dp"
+                        android:layout_height="61dp"
+                        android:background="@mipmap/bd3"
+                        android:gravity="center"
+                        android:text="7.5"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/textView171"
+                        android:layout_width="75dp"
+                        android:layout_height="61dp"
+                        android:background="@mipmap/bd1"
+                        android:gravity="center"
+                        android:text="MT1003"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="252dp"
+                        android:layout_height="61dp"
+                        android:layout_marginLeft="-2dp"
+                        android:background="@mipmap/bd2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="center_vertical"
+                            android:text="Giải tích 1"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="center_vertical"
+                            android:text="BTL:9.75, KT: 8.0, Thi :6.5"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView191"
+                        android:layout_width="60dp"
+                        android:layout_height="61dp"
+                        android:background="@mipmap/bd3"
+                        android:gravity="center"
+                        android:text="7.0"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/textView172"
+                        android:layout_width="75dp"
+                        android:layout_height="61dp"
+                        android:background="@mipmap/bd1"
+                        android:gravity="center"
+                        android:text="SP1005"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="252dp"
+                        android:layout_height="61dp"
+                        android:layout_marginLeft="-2dp"
+                        android:background="@mipmap/bd2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="center_vertical"
+                            android:text="Pháp luật"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="center_vertical"
+                            android:text="KT: 7.5 Thi:9.2"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView192"
+                        android:layout_width="60dp"
+                        android:layout_height="61dp"
+                        android:background="@mipmap/bd3"
+                        android:gravity="center"
+                        android:text="8.5"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:background="@drawable/strokeyellow"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Số tín chỉ tích lũy học kì: "
+                        android:textColor="@color/header"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18"
+                        android:textColor="@color/header"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView161"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Số tín chỉ đăng ký học kì: "
+                        android:textColor="@color/header"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView151"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18"
+                        android:textColor="@color/header"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView162"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Điểm trung bình học kì: "
+                        android:textColor="@color/header"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView152"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7.5"
+                        android:textColor="@color/header"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView163"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Điểm trung bình tích lũy: "
+                        android:textColor="@color/header"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView153"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7.69"
+                        android:textColor="@color/header"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView164"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Số tín chỉ tích lũy: "
+                        android:textColor="@color/header"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView154"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="39"
+                        android:textColor="@color/header"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </TableRow>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Thông tin xét học bổng"
+                android:textColor="@color/header"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:background="@drawable/strokeyellow"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView116"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Điểm trung bình chung mở rộng: "
+                        android:textColor="@color/header"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView115"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8.0"
+                        android:textColor="@color/header"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView1161"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Điểm trung bình một học kì: "
+                        android:textColor="@color/header"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView1151"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7.5"
+                        android:textColor="@color/header"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView1162"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Điểm rèn luyện: "
+                        android:textColor="@color/header"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView1152"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="@color/header"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView1163"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Số tín chỉ đạt trong kì: "
+                        android:textColor="@color/header"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView1153"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18"
+                        android:textColor="@color/header"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </TableRow>
+            </LinearLayout>
+        </LinearLayout>
     </ScrollView>
-    <include layout="@layout/footer"/>
 
 
+    <include layout="@layout/footer" />
 </RelativeLayout>

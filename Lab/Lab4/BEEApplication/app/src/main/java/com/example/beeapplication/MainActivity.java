@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addEvents() {
+
         imgTKB.setOnClickListener(myClick);
         imgBangdiem.setOnClickListener(myClick);
         imgDK.setOnClickListener(myClick);

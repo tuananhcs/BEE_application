@@ -12,6 +12,8 @@ import android.widget.TextView;
 import android.content.Intent;
 import android.widget.TableLayout;
 
+import java.util.ArrayList;
+
 
 public class Payment extends AppCompatActivity{
     Spinner spinner,spinner1;
@@ -28,7 +30,8 @@ public class Payment extends AppCompatActivity{
 
     private void addEvents() {
         s.selectHK(Payment.this,spinner);
-        s.selectStatus(Payment.this,spinner1);
+        String []status={"  Tất cả","  Đã thanh toán","  Chưa thanh toán"};
+        s.select(Payment.this,spinner1,status);
         tblout18_19_1.setOnClickListener(myClick);
         tblout18_19_2.setOnClickListener(myClick);
         tblout19_20_1.setOnClickListener(myClick);
