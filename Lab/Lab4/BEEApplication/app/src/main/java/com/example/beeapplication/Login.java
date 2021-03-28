@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class Login extends AppCompatActivity {
     EditText edtEmail, edtPassword;
     Button btnLogin;
-    TextView txtForgot;
+    TextView txtForgot, txtInputError;
 
     View.OnClickListener myClick = new View.OnClickListener() {
         @Override
@@ -31,10 +31,10 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         addControls();
-        clickForgotPassword();
+        addEvents();
     }
 
-    private void clickForgotPassword() {
+    private void addEvents() {
         txtForgot.setOnClickListener(myClick);
     }
 
@@ -43,6 +43,7 @@ public class Login extends AppCompatActivity {
         edtPassword = findViewById(R.id.edtPassword);
         btnLogin = findViewById(R.id.btnLogin);
         txtForgot = findViewById(R.id.txtForgot);
+        txtInputError=findViewById(R.id.txtInputError);
     }
 
     public void login(View view) {
@@ -50,10 +51,15 @@ public class Login extends AppCompatActivity {
             Toast.makeText(this, "Nhập Email!", Toast.LENGTH_SHORT).show();
         } else if (edtPassword.getText().toString().isEmpty()) {
             Toast.makeText(this, "Nhập Password!", Toast.LENGTH_SHORT).show();
-        } else {
+        }else if (!edtEmail.getText().toString().equals("bee") || !edtPassword.getText().toString().equals("1234")){
+            txtInputError.setVisibility(View.VISIBLE);
+            edtEmail.requestFocus();
+        }
+        else {
             Intent intent = new Intent(Login.this, Load.class);
             startActivity(intent);
         }
+
     }
 
 

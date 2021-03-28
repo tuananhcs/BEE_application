@@ -99,8 +99,10 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, Notification.class);
                 startActivity(intent);
             }else if(id==R.id.imgLogout){
-                Intent intent = new Intent(MainActivity.this, Login.class);
-                startActivity(intent);
+                finish();
+//                Intent intent = new Intent(MainActivity.this, Login.class);
+//                startActivity(intent);
+
             }
         }
     };

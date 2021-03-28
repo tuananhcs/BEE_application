@@ -20,6 +20,7 @@ public class Payment extends AppCompatActivity{
     SpinnerControl s=new SpinnerControl();
 
     TableLayout tblout19_20_1, tblout18_19_1, tblout18_19_2;
+    ImageView imgBack, imgTTCN, imgHome, imgThongbao;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +36,11 @@ public class Payment extends AppCompatActivity{
         tblout18_19_1.setOnClickListener(myClick);
         tblout18_19_2.setOnClickListener(myClick);
         tblout19_20_1.setOnClickListener(myClick);
+
+        imgBack.setOnClickListener(myClick);
+        imgTTCN.setOnClickListener(myClick);
+        imgHome.setOnClickListener(myClick);
+        imgThongbao.setOnClickListener(myClick);
     }
 
     private void addControls() {
@@ -43,13 +49,30 @@ public class Payment extends AppCompatActivity{
         tblout19_20_1 = findViewById(R.id.tthpki1_19_20);
         tblout18_19_2 = findViewById(R.id.tthpki2_18_19);
         tblout18_19_1 = findViewById(R.id.tthpki1_18_19);
+
+        imgBack = findViewById(R.id.imgBack);
+        imgTTCN = findViewById(R.id.imgTTCN);
+        imgHome = findViewById(R.id.imgHome);
+        imgThongbao=findViewById(R.id.imgThongbao);
     }
     View.OnClickListener myClick = new View.OnClickListener() {
         @Override
-        public void onClick(View view) {
-            int id = view.getId();
+        public void onClick(View v) {
+            int id = v.getId();
             if (id == R.id.tthpki1_18_19 || id == R.id.tthpki2_18_19 || id == R.id.tthpki1_19_20) {
                 Intent intent = new Intent(Payment.this, PaymentDetail.class);
+                startActivity(intent);
+            }else if (v.equals(imgBack)) {
+                finish();
+            } else if (v.equals(imgTTCN)) {
+                Intent intent = new Intent(Payment.this, Profile.class);
+                startActivity(intent);
+            } else if (v.equals(imgHome)) {
+                Intent intent = new Intent(Payment.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }else if(v.equals(imgThongbao)){
+                Intent intent = new Intent(Payment.this, Notification.class);
                 startActivity(intent);
             }
         }

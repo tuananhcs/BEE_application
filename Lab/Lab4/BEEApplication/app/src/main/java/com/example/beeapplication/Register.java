@@ -12,6 +12,7 @@ public class Register extends AppCompatActivity {
     ImageView imgBangdiem, imgThesv, imgXacnsv;
     TextView txtBangdiem, txtThesv, txtXacnsv;
 
+    ImageView imgBack, imgTTCN, imgHome, imgThongbao;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +31,11 @@ public class Register extends AppCompatActivity {
         txtThesv.setOnClickListener(myClick);
         txtXacnsv.setOnClickListener(myClick);
 
+        imgBack.setOnClickListener(myClick);
+        imgTTCN.setOnClickListener(myClick);
+        imgHome.setOnClickListener(myClick);
+        imgThongbao.setOnClickListener(myClick);
+
     }
 
     private void addControls() {
@@ -41,6 +47,11 @@ public class Register extends AppCompatActivity {
         txtBangdiem = findViewById(R.id.txtBangdiem);
         txtThesv = findViewById(R.id.txtThesv);
         txtXacnsv = findViewById(R.id.txtXacnsv);
+
+        imgBack = findViewById(R.id.imgBack);
+        imgTTCN = findViewById(R.id.imgTTCN);
+        imgHome = findViewById(R.id.imgHome);
+        imgThongbao=findViewById(R.id.imgThongbao);
     }
     View.OnClickListener myClick = new View.OnClickListener() {
         @Override
@@ -55,7 +66,19 @@ public class Register extends AppCompatActivity {
             } else if (id == R.id.imgXacnsv || id == R.id.txtXacnsv) {
                 Intent intent = new Intent(Register.this, PrintCerf.class);
                 startActivity(intent);
-            }
+            }else if (view.equals(imgBack)) {
+                 finish();
+             } else if (view.equals(imgTTCN)) {
+                 Intent intent = new Intent(Register.this, Profile.class);
+                 startActivity(intent);
+             } else if (view.equals(imgHome)) {
+                 Intent intent = new Intent(Register.this, MainActivity.class);
+                 startActivity(intent);
+                 finish();
+             }else if(view.equals(imgThongbao)){
+                 Intent intent = new Intent(Register.this, Notification.class);
+                 startActivity(intent);
+             }
         }
     };
 }
