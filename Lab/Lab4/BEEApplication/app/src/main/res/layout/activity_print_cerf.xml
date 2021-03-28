@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrintCerf">
+
+    <include layout="@layout/header_detail"/>
+
+    <LinearLayout
+        android:id="@+id/headlayout"
+        android:layout_width="match_parent"
+        android:layout_height="604dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="64dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleprintcerf"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Đăng ký in giấy xác nhận sinh viên"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:textSize="35dp" />
+        <!-- TODO: spinner-->
+
+        <TableLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="517dp"
+            android:layout_marginTop="2dp"
+            android:shrinkColumns="*">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Chọn đợt đăng ký"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spinner_when"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:background="@mipmap/spinner"
+                    android:layout_marginBottom="40dp"
+                    android:dropDownSelector="@mipmap/rectanglehome"
+                    android:popupBackground="@mipmap/rectanglehome"
+                    android:spinnerMode="dialog" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Lý do xin giấy xác nhận"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spinner_why"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="40dp"
+                    android:background="@mipmap/spinner"
+
+                    android:dropDownSelector="@mipmap/rectanglehome"
+                    android:popupBackground="@mipmap/rectanglehome"
+                    android:spinnerMode="dialog" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Muốn nhận kết quả tại:"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spinner_where"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:background="@mipmap/spinner"
+
+                    android:dropDownSelector="@mipmap/rectanglehome"
+                    android:popupBackground="@mipmap/rectanglehome"
+                    android:spinnerMode="dialog" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/chbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_column="0"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_span="2"
+                    android:shadowColor="@color/yellow"
+                    android:text="Tôi đã đọc kỹ các điều khoản và đồng ý thực hiện theo đúng quy định"
+                    android:textColor="@color/redtext"
+                    android:textSize="14dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnRegister"
+
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="150dp"
+                    android:background="@drawable/button_size_small"
+                    android:onClick="Register"
+                    android:text="Đăng ký"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/footer"/>
+
+</RelativeLayout>

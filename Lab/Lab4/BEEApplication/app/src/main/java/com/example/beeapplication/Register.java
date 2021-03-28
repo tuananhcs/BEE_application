@@ -50,10 +50,10 @@ public class Register extends AppCompatActivity {
                 Intent intent = new Intent(Register.this, PrintTrans.class);
                 startActivity(intent);
             } else if (id == R.id.imgThesv || id == R.id.txtThesv) {
-                Intent intent = new Intent(Register.this, PrintTrans.class);
+                Intent intent = new Intent(Register.this, PrintIDCard.class);
                 startActivity(intent);
             } else if (id == R.id.imgXacnsv || id == R.id.txtXacnsv) {
-                Intent intent = new Intent(Register.this, Load.class);
+                Intent intent = new Intent(Register.this, PrintCerf.class);
                 startActivity(intent);
             }
         }
