@@ -16,6 +16,7 @@ public class SpinnerControl {
         spinner = s;
         adapter = new ArrayAdapter<String>(c,
                 android.R.layout.simple_spinner_item);
+        adapter.add("  Tất cả");
         adapter.add("  Học kì 2 2020-2021");
         adapter.add("  Học kì 1 2020-2021");
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
