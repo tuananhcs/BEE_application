@@ -15,6 +15,7 @@ public class Login extends AppCompatActivity {
     EditText edtEmail, edtPassword;
     Button btnLogin;
     TextView txtForgot;
+
     View.OnClickListener myClick = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
