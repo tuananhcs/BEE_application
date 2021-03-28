@@ -26,12 +26,377 @@
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
         android:layout_below="@id/titleLienhe"
-        android:layout_above="@+id/footer">
+        android:layout_marginTop="0dp">
 
-        <!--        TODO: content scrollable-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/yellow"
+                android:padding="10dp"
+                android:text="PHÒNG ĐÀO TẠO"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Cao đẳng, đại học chính quy"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp">
+                <TableRow>
+                    <ImageView
+                        android:src="@mipmap/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:layout_gravity="center|left"/>
+                    <TextView
+                        android:text="Email: pdt@hcmut.edu.vn"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:gravity="center|left"/>
+                </TableRow>
+                <TableRow>
+                    <ImageView
+                        android:src="@mipmap/internet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:layout_gravity="center|left"/>
+                    <TextView
+                        android:text="Website: www.aao.hcmut.edu.vn"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:gravity="center|left"/>
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/strokeyellow"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cơ sở 1: Lý Thường Kiệt"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:paddingRight="10dp"
+                            android:src="@mipmap/location" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="Địa chỉ: 268 Lý Thường Kiệt P.14 Q.10 HCM - P.101 nhà A1"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:paddingRight="10dp"
+                            android:src="@mipmap/telephone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="Điện thoại: 02.838 647 256 - 5221"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/strokeyellow"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cơ sở 2: Dĩ An"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:paddingRight="10dp"
+                            android:src="@mipmap/location" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="Địa chỉ: Trường ĐH Bách Khoa, khu đô thị ĐHQG HCM, Thủ Đức, HCM - P.107 nhà H1
+"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:paddingRight="10dp"
+                            android:src="@mipmap/telephone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="Điện thoại: 02. 838 654 183"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/yellow"
+                android:padding="10dp"
+                android:text="PHÒNG ĐÀO TẠO (VLVH)
+"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/strokeyellow"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:paddingRight="10dp"
+                            android:src="@mipmap/location" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="Địa chỉ: 268 Lý Thường Kiệt P.14 Q.10 HCM - P.201 nhà A4"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:paddingRight="10dp"
+                            android:src="@mipmap/telephone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="Điện thoại: 02. 838 654 183"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </TableRow>
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:paddingRight="10dp"
+                            android:src="@mipmap/email" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="Email: pdt@hcmut.edu.vn"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </TableRow>
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:paddingRight="10dp"
+                            android:src="@mipmap/internet" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="Website:www.aao.hcmut.edu.vn"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/yellow"
+                android:padding="10dp"
+                android:text="VĂN PHÒNG ĐÀO TẠO QUỐC TẾ"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/strokeyellow"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_marginBottom="30dp">
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:paddingRight="10dp"
+                            android:src="@mipmap/location" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="Địa chỉ: 268 Lý Thường Kiệt P.14 Q.10 HCM - P.201 nhà A4"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:paddingRight="10dp"
+                            android:src="@mipmap/telephone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="Điện thoại:  02. 838 654 183"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </TableRow>
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:paddingRight="10dp"
+                            android:src="@mipmap/email" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="Email: pdt@hcmut.edu.vn"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </TableRow>
+                    <TableRow>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:paddingRight="10dp"
+                            android:src="@mipmap/internet" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="Website: http://oisp.hcmut.edu.vn/"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
 
     </ScrollView>
+
     <include layout="@layout/footer"/>
 
 

@@ -30,7 +30,67 @@
         android:layout_below="@id/titleDK"
         android:layout_above="@+id/footer">
 
-        <!--        TODO: content-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*"
+            >
+        <TableRow
+            android:layout_margin="10dp">
+            <ImageView
+                android:layout_width="67dp"
+                android:layout_height="65dp"
+                android:background="@drawable/backgroundimage1"
+                android:src="@mipmap/mark"/>
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="65dp"
+                android:background="@drawable/backgroundtextview"
+                android:layout_marginLeft="5dp"
+                android:textSize="22sp"
+                android:text="ĐĂNG KÍ IN BẢNG ĐIỂM"
+                android:gravity="center|left"
+                android:padding="5dp"/>
+        </TableRow>
+            <TableRow
+                android:layout_margin="10dp"
+                android:layout_width="391dp"
+                android:layout_height="65dp">
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/backgroundimage1"
+                    android:src="@mipmap/register"
+                    />
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/backgroundtextview"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="22sp"
+                    android:text="ĐĂNG KÍ IN THẺ SINH VIÊN"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/backgroundimage1"
+                    android:src="@mipmap/subject"/>
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/backgroundtextview"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="22sp"
+                    android:text="ĐĂNG KÍ IN GIẤY XÁC NHẬN SINH VIÊN"
+                    android:gravity="center|left"
+                    android:padding="5dp"/>
+            </TableRow>
+        </TableLayout>
 
     </ScrollView>
     <include layout="@layout/footer"/>
