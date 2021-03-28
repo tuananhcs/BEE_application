@@ -38,11 +38,13 @@
         <TableRow
             android:layout_margin="10dp">
             <ImageView
+                android:id="@+id/imgBangdiem"
                 android:layout_width="67dp"
                 android:layout_height="65dp"
                 android:background="@drawable/backgroundimage1"
                 android:src="@mipmap/mark"/>
             <TextView
+                android:id="@+id/txtBangdiem"
                 android:layout_width="320dp"
                 android:layout_height="65dp"
                 android:background="@drawable/backgroundtextview"
@@ -57,12 +59,14 @@
                 android:layout_width="391dp"
                 android:layout_height="65dp">
                 <ImageView
+                    android:id="@+id/imgThesv"
                     android:layout_width="67dp"
                     android:layout_height="65dp"
                     android:background="@drawable/backgroundimage1"
                     android:src="@mipmap/register"
                     />
                 <TextView
+                    android:id="@+id/txtThesv"
                     android:layout_width="320dp"
                     android:layout_height="65dp"
                     android:background="@drawable/backgroundtextview"
@@ -76,11 +80,13 @@
             <TableRow
                 android:layout_margin="10dp">
                 <ImageView
+                    android:id="@+id/imgXacnsv"
                     android:layout_width="67dp"
                     android:layout_height="65dp"
                     android:background="@drawable/backgroundimage1"
                     android:src="@mipmap/subject"/>
                 <TextView
+                    android:id="@+id/txtXacnsv"
                     android:layout_width="320dp"
                     android:layout_height="65dp"
                     android:background="@drawable/backgroundtextview"

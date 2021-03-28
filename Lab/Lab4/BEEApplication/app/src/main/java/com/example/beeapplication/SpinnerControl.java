@@ -59,4 +59,27 @@ public class SpinnerControl {
             }
         });
     }
+    protected void selectCS(Context c, Spinner s) {
+        spinner = s;
+        adapter = new ArrayAdapter<String>(c,
+                android.R.layout.simple_spinner_item);
+        adapter.add("  Chọn nơi nhận kết quả");
+        adapter.add("  Cơ sở 1 - Dĩ An");
+        adapter.add("  Cơ sở 2 - Quận 10");
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                ((TextView) parent.getChildAt(0)).setTextColor(Color.WHITE);
+                ((TextView) parent.getChildAt(0)).setTextSize(15);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+    }
 }
