@@ -51,6 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/ngay"
+        android:layout_above="@+id/footer"
 >
 
         <!--        TODO: content-->
@@ -681,10 +682,13 @@
                 </TextView>
             </TableRow>
 
+
         </TableLayout>
 
     </ScrollView>
-    <include layout="@layout/footer"/>
+    <include
+
+        layout="@layout/footer"/>
 
 
 </RelativeLayout>
