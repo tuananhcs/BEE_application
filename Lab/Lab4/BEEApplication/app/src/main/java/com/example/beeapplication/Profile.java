@@ -8,7 +8,8 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class Profile extends AppCompatActivity {
-    ImageView imgBack, imgTTCN, imgHome, imgThongbao;
+    ImageView imgTTCN, imgHome, imgThongbao;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +19,6 @@ public class Profile extends AppCompatActivity {
     }
 
     private void addEvents() {
-        imgBack.setOnClickListener(myClick);
         imgTTCN.setOnClickListener(myClick);
         imgHome.setOnClickListener(myClick);
         imgThongbao.setOnClickListener(myClick);
@@ -26,7 +26,6 @@ public class Profile extends AppCompatActivity {
     }
 
     private void addControls() {
-        imgBack = findViewById(R.id.imgBack);
         imgTTCN = findViewById(R.id.imgTTCN);
         imgHome = findViewById(R.id.imgHome);
         imgThongbao=findViewById(R.id.imgThongbao);
@@ -37,12 +36,7 @@ public class Profile extends AppCompatActivity {
 
         @Override
         public void onClick(View v) {
-            if (v.equals(imgBack)) {
-                finish();
-            } else if (v.equals(imgTTCN)) {
-                Intent intent = new Intent(Profile.this, Profile.class);
-                startActivity(intent);
-            } else if (v.equals(imgHome)) {
+            if (v.equals(imgHome)) {
                 Intent intent = new Intent(Profile.this, MainActivity.class);
                 startActivity(intent);
                 finish();
