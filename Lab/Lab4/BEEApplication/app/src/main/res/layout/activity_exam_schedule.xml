@@ -48,6 +48,7 @@
 
     <ScrollView
         android:id="@+id/scrollView"
+        android:layout_marginTop="7dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/ngay"
@@ -66,11 +67,11 @@
             android:stretchColumns="3,4,5">
             <TableRow
                 android:layout_below="@id/ngay"
-                android:layout_marginTop="7dp"
+                android:background="@drawable/strokebackyellow"
                 android:id="@+id/rowgiua"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/yellow">
+                >
 
                 <TextView
                     android:layout_span="1"
@@ -342,7 +343,7 @@
         android:id="@+id/rowcuoi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/yellow">
+        android:background="@drawable/strokebackyellow">
 
         <TextView
             android:layout_span="1"
