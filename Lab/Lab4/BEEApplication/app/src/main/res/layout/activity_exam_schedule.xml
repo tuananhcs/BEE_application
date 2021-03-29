@@ -7,9 +7,7 @@
     tools:context=".ExamSchedule">
 
     <include
-        layout="@layout/header_detail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        layout="@layout/header_detail" />
 
     <LinearLayout
         android:id="@+id/headlayout"
